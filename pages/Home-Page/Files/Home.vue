@@ -61,22 +61,22 @@
       </b-col>
     </b-row>
     <b-row>
-      <b-col class="body-image-2">
+      <b-col col xl="6" class="body-image-2">
         <img
           src="@/pages/Home-Page/Images/body-image-2.png"
           alt="body-image-2"
         />
-        <!-- <div class="div-form">
-          <form action="">
-            <label>Asesoría Personalizada #SonrisaVejarano</label>
-            <input type="text" />
-            <input type="text" />
-            <input type="text" />
-            <input type="text" />
-            <input type="text" />
-            <input type="text" />
-          </form>
-        </div> -->
+      </b-col>
+      <b-col class="div-form">
+        <form action="">
+          <label>Asesoría Personalizada #SonrisaVejarano</label>
+          <input type="text" />
+          <input type="text" />
+          <input type="text" />
+          <input type="text" />
+          <input type="text" />
+          <input type="text" />
+        </form>
       </b-col>
     </b-row>
   </b-container-fluid>
@@ -101,16 +101,16 @@ export default {
 .headphone img {
   height: 15%;
   width: 15%;
-  margin: 3px;
+  margin-right: 3px;
 }
 .headphone span {
   color: white;
   font-weight: 900;
 }
 .headphone {
-  height: 40px;
-  width: 150px;
-  padding: 1px 0px 1px 0px;
+  /* height: 40px; */
+  /* width: 150px; */
+  /* padding: 1px 0px 1px 0px; */
   text-align: center;
   border-radius: 5px;
   background-color: black;
@@ -131,7 +131,7 @@ export default {
   margin-right: 100px;
 }
 .n-items a {
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 400;
   text-decoration: none;
   text-transform: capitalize;
@@ -185,10 +185,35 @@ a.active {
   font-family: 'Playfair Display', serif;
 }
 .body-image-2 img {
-  width: 100%;
+  width: 99vw;
   margin-left: -3px;
   height: auto;
   margin-top: -51px;
+}
+.div-form label {
+  font-size: 2em;
+  display: block;
+  height: 100px;
+  border: 1px solid white;
+  background: white;
+  color: black;
+}
+.div-form {
+  border-radius: 5px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  top: 70px;
+  left: -25em;
+  border: 2px solid #fff;
+  width: 4em;
+  height: 50vh;
+}
+.div-form input {
+  height: 50px;
+  width: 340px;
+  border-radius: 5px;
 }
 
 @media (max-width: 1024px) {
