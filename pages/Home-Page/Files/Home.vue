@@ -88,7 +88,7 @@
           </div>
           <div class="div-3">
             <p>Lorem ipsum</p>
-            <button>Ver</button>
+            <button><i class="fas fa-play"></i>Ver</button>
           </div>
         </div>
         <div class="div-1">
@@ -97,7 +97,7 @@
           </div>
           <div class="div-3">
             <p>Lorem ipsum</p>
-            <button right>Ver</button>
+            <button><i class="fas fa-play"></i>Ver</button>
           </div>
         </div>
         <div class="div-1">
@@ -106,7 +106,7 @@
           </div>
           <div class="div-3">
             <p>Lorem ipsum</p>
-            <button>Ver</button>
+            <button><i class="fas fa-play"></i>Ver</button>
           </div>
         </div>
         <div class="div-1">
@@ -115,7 +115,7 @@
           </div>
           <div class="div-3">
             <p>Lorem ipsum</p>
-            <button>Ver</button>
+            <button><i class="fas fa-play"></i>Ver</button>
           </div>
         </div>
       </b-col>
@@ -260,29 +260,46 @@ Personalizada"
               src="@/pages/Home-Page/Images/Social/telegram.png"
               alt="telegram"
           /></a>
-          </div>
-          <div>
+        </div>
+        <div>
           <a href="#" target="blank"
             ><img
               src="@/pages/Home-Page/Images/Social/messenger.png"
               alt="messenger"
           /></a>
-          </div>
-          <div>
+        </div>
+        <div>
           <a href="#" target="blank"
             ><img
               src="@/pages/Home-Page/Images/Social/instagram.png"
               alt="instagram"
           /></a>
-          </div>
-          <div>
+        </div>
+        <div>
           <a href="#" target="blank"
             ><img
               src="@/pages/Home-Page/Images/Social/whatsapp.png"
               alt="whatsapp"
           /></a>
-          </div>
-        </b-col>
+        </div>
+      </b-col>
+    </b-row>
+    <b-row class="b-row-8">
+      <b-col cols="5" class="footer text-center">
+        <div>
+          <img src="@/pages/Home-Page/Images/Mainlogo2.png" alt="Mainlogo" />
+        </div>
+        <div class="new">
+          <p>Cra 14 # 81-19 Consultorio 203</p>
+          <p>320 8037031</p>
+          <p>info@odontologiavejarano.com</p>
+        </div>
+        <div class="new1">
+          <p>
+            Marcela Vejarano © All Rights Reserved 2021. Digital Strategy By
+            Closer Design Networks
+          </p>
+        </div>
       </b-col>
     </b-row>
   </b-container-fluid>
@@ -477,11 +494,17 @@ form {
   margin-left: 10px;
   width: 200px;
   height: 50px;
+  font-size: 22px;
+  font-weight: 500;
   /* background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box; */
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 0px 2px 2px #0000000f;
   border-radius: 5px;
   opacity: 1;
+}
+.b-col-2 .div-3 button i {
+  font-size: 25px;
+  margin-right: 20px;
 }
 .b-col-2 .div-3 p {
   width: 208px;
@@ -604,7 +627,6 @@ form {
   opacity: 1;
 }
 .b-row-7 {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -612,21 +634,50 @@ form {
 .b-col-7 {
   display: flex;
   height: 20vh;
-  border: 1px solid red;
   justify-content: center;
   align-items: center;
 }
 .b-col-7 div {
-  border: 1px solid red;
+  width: 4.5vw;
   display: flex;
   justify-content: space-evenly;
 }
 .b-col-7 a img {
+  height: 60px;
+  width: 60px;
+}
+.b-row-8 {
   display: flex;
-  justify-content: space-between;
-  /* border: 1px solid red; */
-  height: 50px;
-  width: 50px;
+  justify-content: center;
+  height: 50vh;
+  background: #000000;
+}
+.b-row-8 .footer div {
+  height: 16vh;
+}
+.b-row-8 .footer div.new p {
+  position: relative;
+  top: 50px;
+  left: 250px;
+  text-align: left;
+  width: 15vw;
+  color: #fff;
+  font-size: 14px;
+}
+.new1 {
+  height: 20px !important;
+  width: 45vw;
+  color: var(--unnamed-color-ffffff);
+  text-align: center;
+  font: normal normal normal 12px/120px Outfit;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+.footer:first-child img {
+  max-width: 280px;
+  position: relative;
+  top: 50px;
 }
 
 /******************************************************* MEDIA QUEARY ******************************************************** */
