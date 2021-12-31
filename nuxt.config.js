@@ -17,7 +17,9 @@ export default {
       integrity: 'sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==',
       crossorigin: 'anonymous',
       referrerpolicy: 'no-referrer'
-    }
+    },
+    { rel: 'stylesheet', href: 'owlcarousel/owl.carousel.min.css' },
+    { rel: 'stylesheet', href: 'owlcarousel/owl.theme.default.min.css' }
     ]
   },
   // Global CSS: https://go.nuxtjs.dev/config-css
