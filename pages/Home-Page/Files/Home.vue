@@ -1,8 +1,15 @@
 <template>
   <b-container-fluid>
     <b-row>
-      <b-col>
-        <b-navbar class="navbar" toggleable="lg" type="light" variant="light">
+      <b-col col sm="12">
+        <b-navbar
+          col
+          sm="12"
+          class="navbar"
+          toggleable="lg"
+          type="light"
+          variant="light"
+        >
           <b-navbar-brand class="mainlogo" href="#"
             ><img src="@/pages/Home-Page/Images/MainLogo.svg"
           /></b-navbar-brand>
@@ -19,20 +26,45 @@
               <b-nav-item class="n-items"
                 ><a href="#" class="active"> Home </a></b-nav-item
               >
+              <b-nav-item class="n-items">
+                <NuxtLink to="/Nav-page/Marcela-Vejarano">
+                  Dra. Marcela Vejarano
+                </NuxtLink>
+              </b-nav-item>
+              <!-- 
               <b-nav-item class="n-items"
-                ><a href="#"> Dra. Marcela Vejarano </a></b-nav-item
+                ><Nuxt-Link to="/Nav-page/Tratamientos">
+                  Tratamientos
+                </Nuxt-Link></b-nav-item
+              > -->
+              <b-nav-item-dropdown class="n-items" text="Tratamientos" right>
+                <b-dropdown-item href="/Nav-page/Tratamientos/Lentes-Cerámicos"
+                  >Lentes Cerámicos
+                </b-dropdown-item>
+                <b-dropdown-item href="#">Diseño de sonrisa</b-dropdown-item>
+                <b-dropdown-item href="#">Estética Dental</b-dropdown-item>
+                <b-dropdown-item href="#">Rehabilitación Oral</b-dropdown-item>
+                <b-dropdown-item href="#">Implantología</b-dropdown-item>
+                <b-dropdown-item href="#">Ortodoncia</b-dropdown-item>
+                <b-dropdown-item href="#"
+                  >Blanqueamiento Dental</b-dropdown-item
+                >
+                <b-dropdown-item href="#">Endodoncia</b-dropdown-item>
+                <b-dropdown-item href="#">Periodoncia</b-dropdown-item>
+              </b-nav-item-dropdown>
+              <b-nav-item class="n-items"
+                ><Nuxt-Link to="/Nav-page/Testimonios">
+                  Testimonios
+                </Nuxt-Link></b-nav-item
               >
               <b-nav-item class="n-items"
-                ><a href="#"> Tratamientos </a></b-nav-item
-              >
-              <b-nav-item class="n-items"
-                ><a href="#"> Testimonios </a></b-nav-item
-              >
-              <b-nav-item class="n-items"
-                ><a href="#"> Antes y Después </a></b-nav-item
+                ><Nuxt-Link to="/Nav-page/Antesy-Después">
+                  Antes y Después
+                </Nuxt-Link></b-nav-item
               >
               <b-nav-item class="n-items headphone">
                 <img
+                  href="/Nav-page/Contact"
                   src="@/pages/Home-Page/Images/headphonelogo.svg"
                   alt="headphonelogo"
                 />Contacto
@@ -42,8 +74,8 @@
         </b-navbar></b-col
       >
     </b-row>
-    <b-row>
-      <b-col col sm="6" lg="6" md="6" xl="6" class="body-image-1">
+    <b-row class="row-row">
+      <b-col col lg="6" md="6" xl="6" class="body-image-1">
         <img src="@/pages/Home-Page/Images/sonrisa.jpg" alt="body-image" />
       </b-col>
       <b-col col sm="6" lg="6" md="6" xl="6" class="body-image-col-6">
@@ -355,18 +387,20 @@ export default {
 }
 .n-items a {
   font-size: 17px;
-  font-weight: 400;
+  font-weight: 600;
   text-decoration: none;
   text-transform: capitalize;
   margin-right: 15px;
   font-weight: 500;
   color: black;
+  transition: 1s;
 }
-/* .n-items a:hover,
+
+.n-items a:hover,
 a.active {
   color: #ffbe34;
-  font-weight: 800;
-} */
+  /* font-weight: 800; */
+}
 .headphone img {
   height: 15%;
   width: 15%;
@@ -940,6 +974,22 @@ form {
 }
 
 @media (max-width: 991px) {
+  /* ---------------------------------------NAVBAR------------------------------------------- */
+  .ml-auto,
+  .mx-auto {
+    margin-left: auto !important;
+    background: #fff;
+    text-align: center;
+  }
+  .navbar .ml-auto[data-v-f77b107c] {
+    margin-top: 20px;
+    margin-right: 0px;
+  }
+  .n-items a[data-v-f77b107c] {
+    font-size: 22px;
+    margin: 20px;
+  }
+
   .body-image-col-6 .line {
     top: -2em;
   }
@@ -1163,7 +1213,6 @@ form {
     max-width: 41%;
   }
   .b-row-6 {
-    border: 1px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1171,6 +1220,42 @@ form {
   }
   .b-row-6 .b-row-col-6 .h2-text {
     font-size: 2em;
+  }
+  .a1-change[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    height: 159px;
+    width: 137px;
+  }
+  .h1-second[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    font: normal normal bold 43px / 119px Playfair Display;
+  }
+  .b-row-6[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    height: 87px;
+    width: 47em;
+  }
+  .footer:first-child img[data-v-f77b107c] {
+    max-width: 220 px;
+  }
+  .b-row-8
+    .footer
+    div.new
+    p[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    width: 32vw;
+  }
+  .b-row-8
+    .footer
+    div.new
+    p[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    left: 107px;
+  }
+  .new1[data-v-f77b107c] {
+    height: 20px !important;
+    width: 45vw;
+    color: var(--unnamed-color-ffffff);
+    text-align: center;
+    font: normal normal normal 8px / 80px Outfit;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
   }
 }
 @media (max-width: 575.98px) {
@@ -1185,12 +1270,283 @@ form {
     top: -15px;
     width: 12em;
   }
+  .col-div-form .div-form {
+    display: block;
+    width: 200%;
+    height: 400px;
+  }
+  .col-div-form .div-form input {
+    display: block;
+    width: 90%;
+  }
+  .b-row-6[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    height: 80px;
+    width: 26em;
+  }
+  .body-image-2 img[data-v-f77b107c] {
+    height: 100vw;
+    width: 102vw;
+    margin-top: -52px;
+    margin-left: -4px;
+  }
+  .div-form[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    top: 43px;
+    left: -18em;
+  }
+  .body-image-2 img[data-v-f77b107c][data-v-f77b107c] {
+    height: 100vw;
+    width: 102vw;
+    margin-top: -50px;
+    margin-left: -4px;
+  }
+  .div-form label[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    display: flex;
+    font-size: 2.5em;
+    height: 102px;
+    align-content: center;
+    align-items: center;
+    background: white;
+    color: black;
+  }
+  .col-div-form .div-form input[data-v-f77b107c] {
+    display: block;
+    width: 99%;
+  }
+  form input[data-v-f77b107c] {
+    height: 53px;
+    width: 220px;
+  }
+  .body-image-2 img[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    height: 100vw;
+    width: 100vw;
+    margin-top: -50px;
+    margin-left: 3px;
+  }
+  .body-image-2
+    img[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    height: 109vw;
+    width: 100vw;
+    margin-top: -50px;
+    margin-left: 3px;
+  }
+  .h1-text[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    font: normal normal bold 50px / 129px Playfair Display;
+  }
+  .div-form
+    label
+    span[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    text-align: center;
+    font-size: 25px;
+  }
+  .b-row-3[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    height: 189vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+  }
+  .b-row-9[data-v-f77b107c] {
+    justify-content: center;
+    height: 581px;
+  }
+  .footer:first-child img[data-v-f77b107c] {
+    max-width: 220 px;
+    position: relative;
+    top: 40px;
+  }
+
+  .b-row-8 .footer div[data-v-f77b107c] {
+    height: 11vh;
+  }
+  .b-row-8
+    .footer
+    div.new
+    p[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    width: 41vw;
+  }
+  .b-row-8
+    .footer
+    div.new
+    p[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    left: 50px;
+  }
+  .new1[data-v-f77b107c][data-v-f77b107c] {
+    height: 20px !important;
+    width: 45vw;
+    color: var(--unnamed-color-ffffff);
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    font: normal normal normal 6px / 155px Outfit;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+  }
 }
 @media (max-width: 320px) {
+  .row-row[data-v-f77b107c] {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    overflow: hidden;
+    position: fixed;
+  }
+  .body-image-1 img[data-v-f77b107c][data-v-f77b107c] {
+    width: 330vw;
+    margin-left: -148px;
+  }
+  .body-image-2
+    img[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    height: 109vw;
+    margin-top: 150vw;
+    /* margin-left: 3px; */
+  }
+  .col-div-form {
+    width: 100%;
+    border: 1px solid red;
+    background: #fff;
+  }
+  .col-div-form .div-form input[data-v-f77b107c][data-v-f77b107c] {
+    width: 100vw;
+    margin-left: auto;
+  }
+  .b-col-2[data-v-f77b107c] {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 102em;
+    background: blue;
+  }
+  .div-1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+  }
+  .div-form[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    top: 43px;
+    left: -18em;
+    /* display: contents; */
+  }
+  .col-div-form[data-v-f77b107c] {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    margin-top: -414px;
+    margin-left: 292px;
+    /* display: none; */
+  }
+  .b-row-2 .b-col-2 .div-1[data-v-f77b107c] {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    border: 1px solid red;
+    background: #fff;
+  }
+  .b-col-2
+    .div-3
+    button[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    width: 135px;
+    height: 45px;
+    margin-top: 20px;
+    border: 1 px solid red;
+  }
+  .b-col-2
+    .div-3
+    p[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    font-size: 20px;
+    width: 224px;
+    height: 43px;
+  }
+  .b-col-2 .div-3[data-v-f77b107c] {
+    width: 15em;
+    height: 12em;
+    background: #fff;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-right: -15px; */
+    /* margin-left: -15px; */
+    flex-flow: column;
+    border: 1px solid red;
+    justify-content: center;
+  }
   .body-image-1 img {
-    object-fit: cover;
-    width: 200vw;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* border: 1px solid red; */
+    /* max-width: 800vw; */
+    /* width: 100%;  */
     height: auto;
+    overflow: hidden;
+    /* width: fit-content; */
+  }
+  .body-image-1 {
+    /* border: 1px solid red; */
+    /* overflow: hidden; */
+  }
+  /* .body-image-1 {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+  } */
+  .row-row {
+    border: 1px solid red;
+  }
+  .h1-row-col-1 {
+    border: 1px solid red;
+  }
+  .b-row-2 {
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+  }
+  .b-row-2 .b-col-2 .div-1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    border: 1px solid red;
+  }
+  .h1-text[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    font: normal normal bold 50px / 55px Playfair Display;
+  }
+  .h1-text[data-v-f77b107c] {
+    background: #fff;
+  }
+  /* -------------------------------------------------------------- */
+  .div-form
+    label[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    display: none;
+    font-size: 2.5em;
+    height: 102px;
+    align-content: center;
+    align-items: center;
+    background: white;
+    color: black;
+  }
+  .h2-text[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    width: 318px;
+    height: 68px;
+    display: none;
+  }
+  .b-row-6[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    height: 80 x;
+    width: 26em;
+    display: none;
+  }
+  .footer:first-child img[data-v-f77b107c][data-v-f77b107c] {
+    max-width: 220px;
+    position: relative;
+    top: 40px;
+    display: none;
+  }
+  .b-row-8
+    .footer
+    div.new
+    p[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    left: 107px;
+    display: none;
   }
 }
 </style>
