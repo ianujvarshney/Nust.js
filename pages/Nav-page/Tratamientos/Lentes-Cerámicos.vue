@@ -1,40 +1,33 @@
 <template>
-  <b-row class="container">
-    <b-row class="row-1"
-      ><b-col>
-        <h1>Marcela Vejarano</h1>
-        <img src="" />
-      </b-col>
-    </b-row>
-    <b-row class="row-2">
-      <b-col class="row-2-col-1">
-        <p>
-          Realizando procedimientos con altos estándares de calidad que les
-          permita mejorar su salud, estética dental y sonreír siempre.
-        </p>
-        <p>
-          Vejarano Odontología Especializada, es una clínica fundada en el 2007
-          por La Dra. Marcela Vejarano. Nuestropropósito es Hacerte sonreír
-          siempre y para esto contamos con los mejores profesionales y
-          necesiten, altamente capacitados para brindar atención integral en
-          salud especialistas en cada área de la odontología que nuestros
-          pacientes oral.
-        </p>
-        <p>
-          Nuestras instalaciones disponen de equipos con la mejor tecnología
-          para el apropiado diagnóstico y tratamiento de las diferentes
-          patologías de nuestros pacientes, brindándoles un servicio cálido e
-          integral. Somos un equipo humano comprometido a mejorar tu calidad de
-          vida, ofreciéndote experiencias únicas en tu visita a nuestros
-          consultorios
-        </p>
-      </b-col>
-    </b-row>
-    <b-row>
-      <b-col>
-        <button>Contactar a un asesor</button>
-      </b-col>
-    </b-row>
+  <b-row class="container-fluid">
+    <b-col>
+      <b-row>
+        <b-col>
+          <h1>Estética Dental</h1>
+        </b-col>
+      </b-row>
+      <b-row>
+        <b-col>
+          <p>
+            Llevamos a cabo técnicas estéticas y reconstructivas, orientadas al
+            diseño de la sonrisa y función de los dientes. La estética dental es
+            una especialidad de la odontología; soluciona problemas de salud
+            dental relacionados con la armonía y estética de la boca, para
+            lograr una sonrisa perfecta.
+          </p>
+        </b-col>
+      </b-row>
+      <b-row>
+        <b-col>
+          <img src="@/pages/Home-Page/Images/slider.jpg" alt="" />
+        </b-col>
+      </b-row>
+      <b-row>
+        <b-col>
+          <button>Contactar a un asesor</button>
+        </b-col>
+      </b-row>
+    </b-col>
   </b-row>
 </template>
 
@@ -46,27 +39,22 @@ export default {}
 * {
   padding: 0;
   margin: 0;
-  /* box-sizing: border-box; */
 }
-.container {
-  border: 1px solid rgb(41, 53, 165);
+.container-fluid {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
 }
-.row-1 {
+.container-fluid .col .row .col {
+  margin: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.row-2 {
-  border: 1px solid red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-flow: row;
-}
-.row-2-col-1 {
-  /* display: flex; */
+.container-fluid .col .row:nth-child(4) .col:first-child button {
+  width: 400px;
+  height: 45px;
+  background: #ffbe34 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  border: none;
 }
 </style>

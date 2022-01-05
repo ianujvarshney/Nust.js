@@ -1,5 +1,5 @@
 <template>
-  <b-container-fluid>
+  <b-container-fluid class="container-fluid">
     <b-row>
       <b-col col sm="12">
         <b-navbar
@@ -14,7 +14,15 @@
             ><img src="@/pages/Home-Page/Images/MainLogo.svg"
           /></b-navbar-brand>
 
-          <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+          <b-navbar-toggle target="nav-collapse">
+            <img
+              class="image-toggle-navbar"
+              height="30px"
+              width="30px"
+              src="@/pages/Home-Page/Images/headphonelogo.svg"
+              alt=""
+            />
+          </b-navbar-toggle>
           <b-collapse id="nav-collapse" is-nav>
             <!-- <b-navbar-nav>
               <b-nav-item href="#">Link</b-nav-item>
@@ -37,20 +45,34 @@
                   Tratamientos
                 </Nuxt-Link></b-nav-item
               > -->
-              <b-nav-item-dropdown class="n-items" text="Tratamientos" right>
+              <b-nav-item-dropdown class="drop" text="Tratamientos">
                 <b-dropdown-item href="/Nav-page/Tratamientos/Lentes-Cerámicos"
                   >Lentes Cerámicos
                 </b-dropdown-item>
-                <b-dropdown-item href="#">Diseño de sonrisa</b-dropdown-item>
-                <b-dropdown-item href="#">Estética Dental</b-dropdown-item>
-                <b-dropdown-item href="#">Rehabilitación Oral</b-dropdown-item>
-                <b-dropdown-item href="#">Implantología</b-dropdown-item>
-                <b-dropdown-item href="#">Ortodoncia</b-dropdown-item>
-                <b-dropdown-item href="#"
+                <b-dropdown-item href="/Nav-page/Tratamientos/Diseño"
+                  >Diseño de sonrisa</b-dropdown-item
+                >
+                <b-dropdown-item href="/Nav-page/Tratamientos/Estética"
+                  >Estética Dental</b-dropdown-item
+                >
+                <b-dropdown-item href="/Nav-page/Tratamientos/Rehabilitación"
+                  >Rehabilitación Oral</b-dropdown-item
+                >
+                <b-dropdown-item href="/Nav-page/Tratamientos/Implantología"
+                  >Implantología</b-dropdown-item
+                >
+                <b-dropdown-item href="/Nav-page/Tratamientos/Ortodoncia"
+                  >Ortodoncia</b-dropdown-item
+                >
+                <b-dropdown-item href="/Nav-page/Tratamientos/Blanqueamiento"
                   >Blanqueamiento Dental</b-dropdown-item
                 >
-                <b-dropdown-item href="#">Endodoncia</b-dropdown-item>
-                <b-dropdown-item href="#">Periodoncia</b-dropdown-item>
+                <b-dropdown-item href="/Nav-page/Tratamientos/Endodoncia"
+                  >Endodoncia</b-dropdown-item
+                >
+                <b-dropdown-item href="/Nav-page/Tratamientos/Periodoncia"
+                  >Periodoncia</b-dropdown-item
+                >
               </b-nav-item-dropdown>
               <b-nav-item class="n-items"
                 ><Nuxt-Link to="/Nav-page/Testimonios">
@@ -84,249 +106,286 @@
         <img src="@/pages/Home-Page/Images/Group.svg" alt="svg" />
       </b-col>
     </b-row>
-    <b-row>
-      <b-col cols="6" class="body-image-2">
-        <img
-          src="@/pages/Home-Page/Images/body-image-2.png"
-          alt="body-image-2"
-        />
-      </b-col>
-      <b-col cols="6" class="col-div-form">
-        <div class="div-form">
-          <form action="">
-            <label><span>Asesoría Personalizada </span> #SonrisaVejarano</label>
-            <input type="text" placeholder="*Nombre" />
-            <input type="text" placeholder="*Correo electrónico" />
-            <input type="text" placeholder="*Apellido" />
-            <input type="text" placeholder="*País" />
-            <input type="text" placeholder="*Teléfono " />
-            <input type="text" class="color-input" placeholder="Enviar" />
-          </form>
-        </div>
-      </b-col>
-    </b-row>
-    <b-row class="h1-row-col-1">
-      <b-col class="h1-text-col-1">
-        <h1 class="text-center h1-text">Casos de éxito</h1>
-      </b-col>
-    </b-row>
-    <b-row class="b-row-2">
-      <b-col cols="8" class="b-col-2">
-        <div class="div-1">
-          <div class="div-2">
-            <img src="@/pages/Home-Page/Images/Image-4.jpg" />
-          </div>
-          <div class="div-3">
-            <p>Lorem ipsum</p>
-            <button><i class="fas fa-play"></i>Ver</button>
-          </div>
-        </div>
-        <div class="div-1">
-          <div class="div-2">
-            <img src="@/pages/Home-Page/Images/Image-4.jpg" />
-          </div>
-          <div class="div-3">
-            <p>Lorem ipsum</p>
-            <button><i class="fas fa-play"></i>Ver</button>
-          </div>
-        </div>
-        <div class="div-1">
-          <div class="div-2">
-            <img src="@/pages/Home-Page/Images/Image-4.jpg" />
-          </div>
-          <div class="div-3">
-            <p>Lorem ipsum</p>
-            <button><i class="fas fa-play"></i>Ver</button>
-          </div>
-        </div>
-        <div class="div-1">
-          <div class="div-2">
-            <img src="@/pages/Home-Page/Images/Image-4.jpg" />
-          </div>
-          <div class="div-3">
-            <p>Lorem ipsum</p>
-            <button><i class="fas fa-play"></i>Ver</button>
-          </div>
-        </div>
-      </b-col>
-    </b-row>
-    <b-row class="b-row-9">
-      <b-col class="b1" cols="1">
-        <div class="text-center"></div>
-        <div class="text-center"></div>
-        <div class="text-center"></div>
-      </b-col>
-    </b-row>
-    <b-row>
+    <b-row class="background-color-white">
       <b-col>
-        <div class="text-center h1-second-div">
-          <h1 class="h1-second">Cambios Fabulosos</h1>
-        </div>
-      </b-col>
-    </b-row>
-    <b-row class="b-row-3">
-      <b-col class="b-col-3" cols="8">
-        <div class="a1">
-          <div>
+        <b-row>
+          <b-col cols="6" class="body-image-2">
             <img
-              src="@/pages/Home-Page/Images/Teeth/1.svg"
-              alt="Diseño de
+              src="@/pages/Home-Page/Images/body-image-2.png"
+              alt="body-image-2"
+            />
+          </b-col>
+          <b-col cols="6" class="col-div-form">
+            <div class="div-form">
+              <h1
+                class="h1-lentus-div"
+                style="
+                  color: rgb(255, 255, 255);
+                  /* position: absolute; */
+                  top: 0;
+                  margin: -300px 0 0;
+                  font-size: 83px;
+                  font-weight: 700;
+                  font-family: 'Playfair Display';
+                "
+              >
+                Lentes Cerámicos
+              </h1>
+              <div class="div-line h1-lentus-div"></div>
+              <img
+                class="h1-lentus-div"
+                data-v-f77b107c=""
+                src="/_nuxt/pages/Home-Page/Images/Group.svg"
+                alt=""
+                style="color: whitye; color: white; width: 365px"
+              />
+              <form action="">
+                <label
+                  ><span>Asesoría Personalizada </span> #SonrisaVejarano</label
+                >
+                <input type="text" placeholder="*Nombre" />
+                <input type="text" placeholder="*Correo electrónico" />
+                <input type="text" placeholder="*Apellido" />
+                <input type="text" placeholder="*País" />
+                <input type="text" placeholder="*Teléfono " />
+                <input type="text" class="color-input" placeholder="Enviar" />
+              </form>
+            </div>
+          </b-col>
+        </b-row>
+        <b-row class="h1-row-col-1">
+          <b-col class="h1-text-col-1">
+            <h1 class="text-center h1-text">Casos de éxito</h1>
+          </b-col>
+        </b-row>
+        <b-row class="b-row-2">
+          <b-col cols="8" class="b-col-2">
+            <div class="div-1">
+              <div class="div-2">
+                <img src="@/pages/Home-Page/Images/Image-4.jpg" />
+              </div>
+              <div class="div-3">
+                <p>Lorem ipsum</p>
+                <button><i class="fas fa-play"></i>Ver</button>
+              </div>
+            </div>
+            <div class="div-1">
+              <div class="div-2">
+                <img src="@/pages/Home-Page/Images/Image-4.jpg" />
+              </div>
+              <div class="div-3">
+                <p>Lorem ipsum</p>
+                <button><i class="fas fa-play"></i>Ver</button>
+              </div>
+            </div>
+            <div class="div-1">
+              <div class="div-2">
+                <img src="@/pages/Home-Page/Images/Image-4.jpg" />
+              </div>
+              <div class="div-3">
+                <p>Lorem ipsum</p>
+                <button><i class="fas fa-play"></i>Ver</button>
+              </div>
+            </div>
+            <div class="div-1">
+              <div class="div-2">
+                <img src="@/pages/Home-Page/Images/Image-4.jpg" />
+              </div>
+              <div class="div-3">
+                <p>Lorem ipsum</p>
+                <button><i class="fas fa-play"></i>Ver</button>
+              </div>
+            </div>
+          </b-col>
+        </b-row>
+        <b-row class="b-row-9">
+          <b-col class="b1" cols="4">
+            <div class="text-center"></div>
+            <div class="text-center"></div>
+            <div class="text-center"></div>
+          </b-col>
+        </b-row>
+        <b-row>
+          <b-col>
+            <div class="text-center h1-second-div">
+              <h1 class="h1-second">Cambios Fabulosos</h1>
+            </div>
+          </b-col>
+        </b-row>
+        <b-row class="b-row-3">
+          <b-col class="b-col-3" cols="8">
+            <div class="a1">
+              <div>
+                <img
+                  src="@/pages/Home-Page/Images/Teeth/1.svg"
+                  alt="Diseño de
 Sonrísa"
-            />
-            <p>Diseño de Sonrísa</p>
-          </div>
-        </div>
-        <div class="a1">
-          <div>
-            <img
-              src="@/pages/Home-Page/Images/Teeth/2.svg"
-              alt="Estética
+                />
+                <p>Diseño de Sonrísa</p>
+              </div>
+            </div>
+            <div class="a1">
+              <div>
+                <img
+                  src="@/pages/Home-Page/Images/Teeth/2.svg"
+                  alt="Estética
 Dental"
-            />
-            <p>Estética Dental</p>
-          </div>
-        </div>
-        <div class="a1">
-          <div>
-            <img
-              src="@/pages/Home-Page/Images/Teeth/3.svg"
-              alt="Rehabilitación
+                />
+                <p>Estética Dental</p>
+              </div>
+            </div>
+            <div class="a1">
+              <div>
+                <img
+                  src="@/pages/Home-Page/Images/Teeth/3.svg"
+                  alt="Rehabilitación
 Oral"
-            />
-            <p>Rehabilitación Oral</p>
-          </div>
-        </div>
-        <div class="a1">
-          <div>
-            <img
-              src="@/pages/Home-Page/Images/Teeth/4.svg"
-              alt="Implantología
+                />
+                <p>Rehabilitación Oral</p>
+              </div>
+            </div>
+            <div class="a1">
+              <div>
+                <img
+                  src="@/pages/Home-Page/Images/Teeth/4.svg"
+                  alt="Implantología
 Dental"
-            />
-            <p>Implantología Dental</p>
-          </div>
-        </div>
-        <div class="a1">
-          <div>
-            <img src="@/pages/Home-Page/Images/Teeth/5.svg" alt="Ortodoncia" />
-            <p>Ortodoncia</p>
-          </div>
-        </div>
-        <div class="a1">
-          <div>
-            <img
-              src="@/pages/Home-Page/Images/Teeth/6.svg"
-              alt="Blanqueamiento
+                />
+                <p>Implantología Dental</p>
+              </div>
+            </div>
+            <div class="a1">
+              <div>
+                <img
+                  src="@/pages/Home-Page/Images/Teeth/5.svg"
+                  alt="Ortodoncia"
+                />
+                <p>Ortodoncia</p>
+              </div>
+            </div>
+            <div class="a1">
+              <div>
+                <img
+                  src="@/pages/Home-Page/Images/Teeth/6.svg"
+                  alt="Blanqueamiento
 Dental"
-            />
-            <p>Blanqueamiento Dental</p>
-          </div>
-        </div>
-        <div class="a1">
-          <div>
-            <img
-              src="@/pages/Home-Page/Images/Teeth/7.svg"
-              alt="Cirugía
+                />
+                <p>Blanqueamiento Dental</p>
+              </div>
+            </div>
+            <div class="a1">
+              <div>
+                <img
+                  src="@/pages/Home-Page/Images/Teeth/7.svg"
+                  alt="Cirugía
 Maxilofacial"
-            />
-            <p>Cirugía Maxilofacial</p>
-          </div>
-        </div>
-        <div class="a1">
-          <div>
-            <img src="@/pages/Home-Page/Images/Teeth/8.svg" alt="Endodoncia" />
-            <p>Endodoncia</p>
-          </div>
-        </div>
-        <div class="a1">
-          <div>
-            <img src="@/pages/Home-Page/Images/Teeth/9.svg" alt="Periodoncia" />
-            <p>Periodoncia</p>
-          </div>
-        </div>
-        <div class="a1-change">
-          <div>
-            <img
-              src="@/pages/Home-Page/Images/Teeth/10.svg"
-              alt="Asesoría
+                />
+                <p>Cirugía Maxilofacial</p>
+              </div>
+            </div>
+            <div class="a1">
+              <div>
+                <img
+                  src="@/pages/Home-Page/Images/Teeth/8.svg"
+                  alt="Endodoncia"
+                />
+                <p>Endodoncia</p>
+              </div>
+            </div>
+            <div class="a1">
+              <div>
+                <img
+                  src="@/pages/Home-Page/Images/Teeth/9.svg"
+                  alt="Periodoncia"
+                />
+                <p>Periodoncia</p>
+              </div>
+            </div>
+            <div class="a1-change">
+              <div>
+                <img
+                  src="@/pages/Home-Page/Images/Teeth/10.svg"
+                  alt="Asesoría
 Personalizada"
-            />
-            <p>Asesoría Personalizada</p>
-          </div>
-        </div>
-      </b-col>
-    </b-row>
-    <b-row>
-      <b-col class="text-center h1-second">
-        <p>#SonrisaVejarano</p>
-      </b-col>
-    </b-row>
-    <b-row class="b-row-4">
-      <b-col cols="8" class="col-4-div">
-        <div class="a2">
-          <img src="@/pages/Home-Page/Images/slider.jpg" alt="" />
-        </div>
-        <div class="a2">
-          <img src="@/pages/Home-Page/Images/slider.jpg" alt="" />
-        </div>
-        <div class="a2">
-          <img src="@/pages/Home-Page/Images/slider.jpg" alt="" />
-        </div>
-      </b-col>
-    </b-row>
+                />
+                <p>Asesoría Personalizada</p>
+              </div>
+            </div>
+          </b-col>
+        </b-row>
+        <b-row>
+          <b-col class="text-center h1-second">
+            <p>#SonrisaVejarano</p>
+          </b-col>
+        </b-row>
+        <b-row class="b-row-4">
+          <b-col cols="8" class="col-4-div">
+            <div class="a2">
+              <img src="@/pages/Home-Page/Images/slider.jpg" alt="" />
+            </div>
+            <div class="a2">
+              <img src="@/pages/Home-Page/Images/slider.jpg" alt="" />
+            </div>
+            <div class="a2">
+              <img src="@/pages/Home-Page/Images/slider.jpg" alt="" />
+            </div>
+          </b-col>
+        </b-row>
 
-    <b-row class="b-row-9">
-      <b-col class="b1" cols="1">
-        <div class="text-center"></div>
-        <div class="text-center"></div>
-        <div class="text-center"></div>
-      </b-col>
-    </b-row>
-    <b-row class="text-center b-row-5">
-      <b-col class="b-col-5">
-        <img src="@/pages/Home-Page/Images/10.svg" alt="" />
-      </b-col>
-    </b-row>
-    <b-row>
-      <b-col class="h1-text-col">
-        <h1 class="text-center h1-text">Asesoría Online</h1>
-      </b-col>
-    </b-row>
-    <b-row class="b-row-6">
-      <b-col cols="3" class="b-row-col-6">
-        <h1 class="h2-text">+57 320 8037031</h1>
-      </b-col>
-    </b-row>
-    <b-row class="b-row-7">
-      <b-col class="b-col-7" cols="3">
-        <div>
-          <a href="#" target="blank"
-            ><img
-              src="@/pages/Home-Page/Images/Social/telegram.png"
-              alt="telegram"
-          /></a>
-        </div>
-        <div>
-          <a href="#" target="blank"
-            ><img
-              src="@/pages/Home-Page/Images/Social/messenger.png"
-              alt="messenger"
-          /></a>
-        </div>
-        <div>
-          <a href="#" target="blank"
-            ><img
-              src="@/pages/Home-Page/Images/Social/instagram.png"
-              alt="instagram"
-          /></a>
-        </div>
-        <div>
-          <a href="#" target="blank"
-            ><img
-              src="@/pages/Home-Page/Images/Social/whatsapp.png"
-              alt="whatsapp"
-          /></a>
-        </div>
+        <b-row class="b-row-9">
+          <b-col class="b1" cols="1">
+            <div class="text-center"></div>
+            <div class="text-center"></div>
+            <div class="text-center"></div>
+          </b-col>
+        </b-row>
+        <b-row class="text-center b-row-5">
+          <b-col class="b-col-5">
+            <img src="@/pages/Home-Page/Images/10.svg" alt="" />
+          </b-col>
+        </b-row>
+        <b-row>
+          <b-col class="h1-text-col">
+            <h1 class="text-center h1-text">Asesoría Online</h1>
+          </b-col>
+        </b-row>
+        <b-row class="b-row-6">
+          <b-col cols="3" class="b-row-col-6">
+            <h1 class="h2-text">+57 320 8037031</h1>
+          </b-col>
+        </b-row>
+        <b-row class="b-row-7">
+          <b-col class="b-col-7" cols="3">
+            <div>
+              <a href="#" target="blank"
+                ><img
+                  src="@/pages/Home-Page/Images/Social/telegram.png"
+                  alt="telegram"
+              /></a>
+            </div>
+            <div>
+              <a href="#" target="blank"
+                ><img
+                  src="@/pages/Home-Page/Images/Social/messenger.png"
+                  alt="messenger"
+              /></a>
+            </div>
+            <div>
+              <a href="#" target="blank"
+                ><img
+                  src="@/pages/Home-Page/Images/Social/instagram.png"
+                  alt="instagram"
+              /></a>
+            </div>
+            <div>
+              <a href="#" target="blank"
+                ><img
+                  src="@/pages/Home-Page/Images/Social/whatsapp.png"
+                  alt="whatsapp"
+              /></a>
+            </div>
+          </b-col>
+        </b-row>
       </b-col>
     </b-row>
     <b-row class="b-row-8">
@@ -369,7 +428,9 @@ export default {
   margin: 0;
   box-sizing: border-box;
 }
-
+.h1-lentus-div {
+  display: none;
+}
 .mainlogo img {
   margin-left: 100px;
   height: 90%;
@@ -384,6 +445,29 @@ export default {
 }
 .navbar .ml-auto {
   margin-right: 100px;
+}
+.image-toggle-navbar[data-v-f77b107c] {
+  background: #000;
+  font-size: 30px;
+  border-radius: 1px solid red;
+  border-radius: 20px;
+  padding: 5px;
+  position: relative;
+  left: 145vw;
+  top: -45px;
+}
+
+.drop {
+  color: black;
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+  color: black;
+  outline: none;
+}
+.navbar-light {
+  color: rgba(0, 0, 0, 0.5);
+  border-color: none;
 }
 .n-items a {
   font-size: 17px;
@@ -812,6 +896,10 @@ form {
   .body-image-col-6 h1 {
     font-size: 6em;
   }
+
+  .h1-lentus-div {
+    display: none;
+  }
   .body-image-col-6 .line {
     width: 28em;
   }
@@ -822,6 +910,10 @@ form {
 @media (max-width: 1440px) {
   .body-image-col-6 .line {
     top: 0px;
+  }
+
+  .h1-lentus-div {
+    display: none;
   }
   .body-image-col-6 img {
     top: 0px;
@@ -885,6 +977,10 @@ form {
 @media (max-width: 1199px) {
   .body-image-col-6 h1 {
     font-size: 5em;
+  }
+
+  .h1-lentus-div {
+    display: none;
   }
   .body-image-col-6 .line {
     top: -40px;
@@ -981,8 +1077,12 @@ form {
     background: #fff;
     text-align: center;
   }
+
+  .h1-lentus-div {
+    display: none;
+  }
   .navbar .ml-auto[data-v-f77b107c] {
-    margin-top: 20px;
+    margin-top: 0px;
     margin-right: 0px;
   }
   .n-items a[data-v-f77b107c] {
@@ -1015,7 +1115,6 @@ form {
     margin-right: 0px;
     font-weight: 600;
     font-size: 28px;
-    border: 1 px solid red;
     width: 213px;
   }
   .h1-text[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
@@ -1108,6 +1207,10 @@ form {
 @media (max-width: 767.98px) {
   .body-image-col-6 h1 {
     font-size: 3.5em;
+  }
+
+  .h1-lentus-div {
+    display: none;
   }
   .body-image-col-6 img {
     font-size: 2em;
@@ -1262,6 +1365,10 @@ form {
   .body-image-col-6 h1 {
     font-size: 2.5em;
   }
+
+  .h1-lentus-div {
+    display: none;
+  }
   .body-image-col-6 img {
     font-size: 1.5em;
     top: -20px;
@@ -1398,155 +1505,270 @@ form {
     img[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
     height: 109vw;
     margin-top: 150vw;
-    /* margin-left: 3px; */
   }
-  .col-div-form {
-    width: 100%;
-    border: 1px solid red;
-    background: #fff;
+  .n-items a[data-v-f77b107c][data-v-f77b107c] {
+    font-size: 22px;
+    margin: 20px;
+    display: block;
+    width: 148vw;
+    margin-top: 11px;
   }
-  .col-div-form .div-form input[data-v-f77b107c][data-v-f77b107c] {
-    width: 100vw;
-    margin-left: auto;
+  .navbar[data-v-f77b107c] {
+    position: fixed;
+    height: 18vh;
+    z-index: 1;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
   }
-  .b-col-2[data-v-f77b107c] {
-    display: flex;
+  .navbar[data-v-f77b107c][data-v-f77b107c] {
+    width: auto;
+  }
+  .col-6 {
+    flex: 0 0 50%;
+  }
+  .row {
+    display: contents;
     flex-wrap: wrap;
-    flex-direction: row;
-    width: 102em;
-    background: blue;
+    margin-right: -15px;
+    margin-left: -15px;
   }
-  .div-1 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-flow: row;
+  .body-image-1 img[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    width: 517vw;
+    margin-left: -241px;
+  }
+  .body-image-2
+    img[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    height: 254vw;
+    margin-top: 100vh;
+    width: 160vw;
   }
   .div-form[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
-    top: 43px;
-    left: -18em;
-    /* display: contents; */
+    top: -555px;
+    left: 4em;
+    display: block;
   }
-  .col-div-form[data-v-f77b107c] {
-    display: flex;
-    flex-wrap: wrap;
-    flex-flow: column;
-    margin-top: -414px;
-    margin-left: 292px;
-    /* display: none; */
+  .col-div-form .div-form input[data-v-f77b107c][data-v-f77b107c] {
+    width: 98%;
   }
-  .b-row-2 .b-col-2 .div-1[data-v-f77b107c] {
-    display: flex;
-    flex-wrap: wrap;
-    flex-flow: row;
-    border: 1px solid red;
-    background: #fff;
+  .div-form
+    label[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    font-size: 20px;
+  }
+  form[data-v-f77b107c] {
+    border-radius: 12px;
+  }
+  .col-6 {
+    max-width: 60%;
+  }
+  .body-image-col-6 h1[data-v-f77b107c] {
+    font-size: 3.6em;
+    position: absolute;
+    top: -5em;
+    left: 20px;
+    color: #fff;
+  }
+  .h1-row-col-1 {
+    justify-content: center;
+    align-items: center;
+    height: 99 vh;
+    background: #fff !important;
+    margin-left: -69 px;
+    margin-right: -161 px;
+    width: 174 vw;
+    margin-bottom: 139 px;
+  }
+  .h1-text[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    font: normal normal bold 96px / 129px Playfair Display;
+  }
+  .h1-text-col-1.col {
+    margin-left: 63px;
   }
   .b-col-2
     .div-3
-    button[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    button[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
     width: 135px;
-    height: 45px;
-    margin-top: 20px;
-    border: 1 px solid red;
+    height: 42px;
+    margin-top: 26px;
+    margin-left: 50px;
   }
   .b-col-2
     .div-3
     p[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
-    font-size: 20px;
-    width: 224px;
-    height: 43px;
+    font-size: 24px;
+    width: 202px;
+    height: 46px;
   }
-  .b-col-2 .div-3[data-v-f77b107c] {
-    width: 15em;
-    height: 12em;
-    background: #fff;
+  .b-col-2
+    .div-1[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    width: 215%;
+    margin-left: 99vw;
+  }
+  .h1-second-div[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    height: 182vh;
+    margin-bottom: 0px;
   }
 
-  .row {
+  .b-row-3[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    height: 209vh;
     display: flex;
-    flex-wrap: wrap;
-    /* margin-right: -15px; */
-    /* margin-left: -15px; */
     flex-flow: column;
-    border: 1px solid red;
+    width: 154vw;
+  }
+  .h1-second[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    font: normal normal bold 43px / 73px Playfair Display;
+    margin-left: 38px;
+    flex-wrap: wrap;
+    flex-flow: column;
+    display: flex;
+  }
+  .b-row-4 {
+    margin-left: 194px;
+    margin-top: 16px;
+    display: block;
+  }
+  .col-4-div
+    .a2
+    img[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    width: 443px;
+    height: 282px;
+  }
+  .col-4-div[data-v-f77b107c] {
+    height: 160vh;
+  }
+  .b-row-5
+    .b-col-5
+    img[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    max-width: 109px;
+    display: flex;
     justify-content: center;
+    margin-left: 205px;
+    margin-top: 40px;
   }
-  .body-image-1 img {
-    /* display: flex; */
-    /* justify-content: center; */
-    /* border: 1px solid red; */
-    /* max-width: 800vw; */
-    /* width: 100%;  */
-    height: auto;
-    overflow: hidden;
-    /* width: fit-content; */
+  .h1-text-col[data-v-f77b107c] {
+    height: 150px;
+    margin-left: 67px;
+    margin-top: 97px;
   }
-  .body-image-1 {
-    /* border: 1px solid red; */
-    /* overflow: hidden; */
+  .h1-text-col[data-v-f77b107c][data-v-f77b107c] {
+    height: 331px;
+    margin-left: 80px;
+    margin-top: 111px;
   }
-  /* .body-image-1 {
-    border: 1px solid red;
+  .h2-text[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    width: 457px;
+    height: 68px;
+    margin-left: 20px;
+  }
+  .b-col-7 div[data-v-f77b107c] {
+    width: 73px;
+  }
+  .b-col-7
+    a
+    img[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    height: 60px;
+    width: 60px;
+    margin: 20px;
+  }
+  .col-3[data-v-f77b107c] {
+    flex: 0 0 25%;
+    max-width: 144%;
+    width: 139%;
+  }
+  .b-row-8 .footer div[data-v-f77b107c][data-v-f77b107c] {
+    height: 20vh;
+    background: #000;
+    width: 513px;
+  }
+  .b-row-8
+    .footer
+    div.new
+    p[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    left: 136px;
+  }
+
+  .b-row-8
+    .footer
+    div.new
+    p[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    width: 95vw;
+  }
+  .b-col-3 .a1[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    width: 143px;
+    height: 196px;
+  }
+  .a1-change[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    height: 202px;
+    width: 137px;
+  }
+
+  .mainlogo img[data-v-f77b107c] {
+    margin-left: 100px;
+    height: 90%;
+    width: 55%;
+  }
+  .navbar-light .navbar-toggler-icon {
+    /* background-image: url('@/pages/Home-Page/Images/headphonelogo.svg'); */
+    max-width: 5px;
+    background: #000;
+    border: 10px solid red;
+  }
+  .new1[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    height: 152px !important;
+    width: 45vw;
+    color: var(--unnamed-color-ffffff);
+    text-align: center;
     display: flex;
-    justify-content: center;
-  } */
-  .row-row {
-    border: 1px solid red;
-  }
-  .h1-row-col-1 {
-    border: 1px solid red;
-  }
-  .b-row-2 {
-    border: 1px solid red;
-    display: flex;
-    flex-wrap: wrap;
     flex-flow: column;
+    padding: 20px;
+    font: normal normal normal 20px / 30px Outfit;
+    letter-spacing: 0px;
+    color: #fff;
+    opacity: 1;
+    background: black;
   }
-  .b-row-2 .b-col-2 .div-1 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-flow: column;
-    border: 1px solid red;
+  .div-form
+    label
+    span[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    text-align: center;
+    font-size: 26px;
+    width: 303px;
   }
-  .h1-text[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
-    font: normal normal bold 50px / 55px Playfair Display;
-  }
-  .h1-text[data-v-f77b107c] {
-    background: #fff;
-  }
-  /* -------------------------------------------------------------- */
   .div-form
     label[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
-    display: none;
-    font-size: 2.5em;
+    display: flex;
+    font-size: 1.2em;
     height: 102px;
     align-content: center;
     align-items: center;
     background: white;
     color: black;
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  .h2-text[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
-    width: 318px;
-    height: 68px;
+  .h1-text[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    font: normal normal bold 72px / 129px Playfair Display;
+    margin-bottom: 74px;
+  }
+  .body-image-col-6 h1[data-v-f77b107c][data-v-f77b107c] {
     display: none;
   }
-  .b-row-6[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
-    height: 80 x;
-    width: 26em;
-    display: none;
+
+  .h1-lentus-div {
+    display: block;
   }
-  .footer:first-child img[data-v-f77b107c][data-v-f77b107c] {
-    max-width: 220px;
+  .div-line {
+    border: 1px solid #ffbe34;
+  }
+  .b-row-9 .b1[data-v-f77b107c] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
-    top: 40px;
-    display: none;
+    top: 80vh;
+    left: 58vw;
   }
-  .b-row-8
-    .footer
-    div.new
-    p[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
-    left: 107px;
-    display: none;
+  .background-color-white {
+    background: #fff;
+    display: block;
   }
 }
 </style>
