@@ -199,7 +199,7 @@
           </b-col>
         </b-row>
         <b-row class="b-row-9">
-          <b-col class="b1" cols="4">
+          <b-col class="b1" cols="2">
             <div class="text-center"></div>
             <div class="text-center"></div>
             <div class="text-center"></div>
@@ -208,7 +208,7 @@
         <b-row>
           <b-col>
             <div class="text-center h1-second-div">
-              <h1 class="h1-second">Cambios Fabulosos</h1>
+              <h1 class="h1-second-part">Cambios Fabulosos</h1>
             </div>
           </b-col>
         </b-row>
@@ -333,7 +333,7 @@ Personalizada"
         </b-row>
 
         <b-row class="b-row-9">
-          <b-col class="b1" cols="1">
+          <b-col class="b1" cols="2">
             <div class="text-center"></div>
             <div class="text-center"></div>
             <div class="text-center"></div>
@@ -449,17 +449,13 @@ export default {
 .image-toggle-navbar[data-v-f77b107c] {
   background: #000;
   font-size: 30px;
-  border-radius: 1px solid red;
   border-radius: 20px;
   padding: 5px;
-  position: relative;
-  left: 145vw;
-  top: -45px;
+  /* position: relative; */
+  /* left: 145vw;
+  top: -45px; */
 }
 
-.drop {
-  color: black;
-}
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link:focus {
   color: black;
@@ -832,7 +828,7 @@ form {
   background: #000000;
 }
 .b-row-8 .footer div {
-  height: 16vh;
+  height: 20vh;
 }
 .b-row-8 .footer div.new p {
   position: relative;
@@ -1365,9 +1361,34 @@ form {
   .body-image-col-6 h1 {
     font-size: 2.5em;
   }
+  .image-toggle-navbar[data-v-f77b107c][data-v-f77b107c] {
+    position: relative;
+    left: -9vw;
+  }
+  .image-toggle-navbar[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    position: relative;
+    left: 88vw;
+    top: -53px;
+  }
 
   .h1-lentus-div {
     display: none;
+  }
+  .div-form
+    label[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    display: table-footer-group;
+    font-size: 26px;
+    height: 102px;
+    align-content: center;
+    align-items: center;
+    background: white;
+    color: black;
+  }
+  .div-form
+    label
+    span[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    text-align: center;
+    font-size: 36px;
   }
   .body-image-col-6 img {
     font-size: 1.5em;
@@ -1476,6 +1497,10 @@ form {
     p[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
     left: 50px;
   }
+  .b-col-2
+    .div-1[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    width: 132%;
+  }
   .new1[data-v-f77b107c][data-v-f77b107c] {
     height: 20px !important;
     width: 45vw;
@@ -1496,6 +1521,18 @@ form {
     flex-flow: column;
     overflow: hidden;
     position: fixed;
+  }
+  .headphone[data-v-f77b107c] {
+    border-radius: 5px;
+    background-color: black;
+    height: 34px;
+    width: 0vw;
+    display: block;
+  }
+  .image-toggle-navbar[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    position: relative;
+    left: 145vw;
+    top: -40px;
   }
   .body-image-1 img[data-v-f77b107c][data-v-f77b107c] {
     width: 330vw;
@@ -1654,9 +1691,9 @@ form {
     margin-top: 111px;
   }
   .h2-text[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
-    width: 457px;
+    width: 479px;
     height: 68px;
-    margin-left: 20px;
+    margin-left: 31px;
   }
   .b-col-7 div[data-v-f77b107c] {
     width: 73px;
@@ -1745,7 +1782,7 @@ form {
     justify-content: center;
   }
   .h1-text[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
-    font: normal normal bold 72px / 129px Playfair Display;
+    font: normal normal bold 98px / 129px Playfair Display;
     margin-bottom: 74px;
   }
   .body-image-col-6 h1[data-v-f77b107c][data-v-f77b107c] {
@@ -1763,12 +1800,24 @@ form {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    top: 80vh;
-    left: 58vw;
+    top: 96vh;
+    left: 72vw;
   }
   .background-color-white {
     background: #fff;
     display: block;
+  }
+  .h1-second-part[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    font: normal normal bold 76px / 80px Playfair Display;
+    margin-left: 160px;
+    flex-wrap: wrap;
+    flex-flow: column;
+    display: flex;
+    margin-top: 430px;
+  }
+  .h1-second[data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c][data-v-f77b107c] {
+    font: normal normal bold 55px / 73px Playfair Display;
+    margin-left: 90px;
   }
 }
 </style>
